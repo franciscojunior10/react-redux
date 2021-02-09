@@ -1,7 +1,5 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
-const App: FC = () => (
-  <h1>Helloo world</h1>
-);
+const App: FC = () => <h1>Helloo world</h1>;
 
 export default App;
