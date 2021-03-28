@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import { IProduct } from './props';
+import { ActionTypes, IProduct } from './props';
 
 export function addProductToCartRequest(product: IProduct) {
   return {
-    type: 'ADD_PRODUCT_TO_CART_REQUEST',
+    type: ActionTypes.addProductToCartRequest,
     payload: {
       product,
     },
@@ -13,7 +13,7 @@ export function addProductToCartRequest(product: IProduct) {
 
 export function addProductToCartSuccess(product: IProduct) {
   return {
-    type: 'ADD_PRODUCT_TO_CART_SUCCESS',
+    type: ActionTypes.addProductToCartSuccess,
     payload: {
       product,
     },
@@ -22,7 +22,7 @@ export function addProductToCartSuccess(product: IProduct) {
 
 export function addProductToCartFailure(productId: number) {
   return {
-    type: 'ADD_PRODUCT_TO_CART_FAILURE',
+    type: ActionTypes.addProductToCartFailure,
     payload: {
       productId,
     },
